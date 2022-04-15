@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_marginTop="10dp"
+        android:background="@drawable/bg_pic" android:layout_height="601dp" android:layout_width="409dp" android:orientation="vertical">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="This course tackles the basics of networking, it serves as an introductory course to the networking area since it is fundamental for the understanding of the application of Cybersecurity." android:id="@+id/textView"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Teacher: John Smith" android:id="@+id/textView3" android:translationY="50dp" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Duration: 4 weeks" android:id="@+id/textView6" android:translationY="50dp" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Prerequisite: Quick read of TCP/IP and OSI models. " android:id="@+id/textView7" android:translationY="50dp" android:textStyle="bold"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Enroll" android:id="@+id/enroll" android:translationY="75dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="https://1drv.ms/u/s!Aoftm_YsAD2GiRDYqm7-wDOhzqCJ?e=ku1afP" android:id="@+id/link" android:translationY="100dp" android:textStyle="bold" android:visibility="invisible"/>
+
+</LinearLayout>
+

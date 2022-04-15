@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/bg_pic"
+    android:scrollbarThumbVertical="@color/black"
+    android:scrollIndicators="right"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload a new Course"
+        android:textStyle="bold"
+        android:id="@+id/tv_upload"
+        android:textSize="33dp"
+        android:gravity="left"
+
+        />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_upload"
+            android:id="@+id/lin_lay"
+>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/categoryspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/uploadBt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="169dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="48dp"
+        android:text="Upload"
+        android:textSize="14.2dp"
+        android:textStyle="bold"
+        android:onClick="uploadCourse"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course ID"
+        android:layout_below="@+id/lin_lay"
+        android:id="@+id/tv_course_id"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/course_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/tv_course_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Teacher ID"
+        android:id="@+id/tv_teacher_id"
+        android:layout_marginTop="1dp"
+        android:textStyle="bold"
+        android:layout_below="@id/course_id"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <EditText
+        android:id="@+id/teacher_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/tv_teacher_id"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Course title:"
+        android:id="@+id/tv_course_title"
+        android:layout_below="@id/teacher_id"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/course_name"
+        android:layout_below="@id/tv_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name the course" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Course Duration:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/course_name"
+        android:id="@+id/tv_course_duration"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/course_duration"
+        android:layout_below="@id/tv_course_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration in Weeks"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Course price:"
+        android:id="@+id/tv_course_price"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/course_duration"/>
+
+    <EditText
+        android:id="@+id/course_price"
+        android:layout_below="@+id/tv_course_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="$" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Prerequisites:"
+        android:id="@+id/tv_prereq"
+        android:layout_below="@id/course_price"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/course_prereq"
+        android:layout_below="@+id/tv_prereq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Materials + Quiz:"
+        android:id="@+id/tv_materials"
+        android:layout_below="@+id/course_prereq"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/materials"
+        android:layout_below="@+id/tv_materials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="OneDrive link"
+        />
+
+</RelativeLayout>
+
+

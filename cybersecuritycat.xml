@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <ScrollView android:background="@drawable/bg_pic"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Click on the course for more information"
+        android:gravity="center"
+        android:id="@+id/textView5"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Networking 1 "
+        android:id="@+id/Networking1"
+        android:translationY="30dp"
+        android:height="100dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Networking 2 "
+        android:id="@+id/button3"
+        android:translationY="30dp"
+        android:height="100dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Networking 3"
+        android:id="@+id/button4"
+        android:translationY="30dp"
+        android:height="100dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="WebApp penetration testing"
+        android:id="@+id/button5"
+        android:translationY="30dp"
+        android:height="100dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="android app penetration testing"
+        android:id="@+id/button6"
+        android:translationY="30dp"
+        android:height="100dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="IOS app penetration testing"
+        android:id="@+id/button7"
+        android:translationY="30dp"
+        android:height="100dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Button" android:id="@+id/button8" android:translationY="30dp" android:height="100dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Button" android:id="@+id/button9" android:translationY="30dp" android:height="100dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Button" android:id="@+id/button10" android:translationY="30dp" android:height="100dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Button" android:id="@+id/button11" android:translationY="30dp" android:height="100dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Button" android:id="@+id/button12" android:translationY="30dp" android:height="100dp"/>
+
+</LinearLayout>
+
+</ScrollView>
